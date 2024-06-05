@@ -1,0 +1,51 @@
+table 
+  width: auto
+  height: auto
+  border-collapse: collapse
+  border: 5px
+  border-color: #000000
+  table-layout: fixed
+  box-shadow: 4px 4px 10px #17171765
+
+  th, td 
+    border: 3px solid #000000
+    padding: 8px
+    text-align: left
+    max-width: 100%
+    text-align:center
+
+  th
+    background-color: #e38f09
+    color: #ffffff
+    text-align:center
+    width: auto
+    font-size: 16px
+
+form
+  display: flex
+  flex-direction: row
+  gap: 1rem
+
+  input
+    box-shadow: 2px 2px 2px rgba(35, 35, 35, 0.312)
+    border-radius: 15px
+    padding: 1rem
+    border: rgba(0, 0, 0, 0) 1px solid
+
+    &:hover
+      border-color: black
+
+    &::placeholder
+      color: gray
+
+  input[type=submit]
+    @extend input
+
+    width: min-content
+    height: min-content
+    color: white
+    background-color: #e38f09
+
+.title
+  color: black
+  padding: 1rem
